@@ -34,12 +34,23 @@
 | [4949](https://www.acmicpc.net/problem/4949) ✅ | [9012](https://www.acmicpc.net/problem/9012) ✅ | [10799](https://www.acmicpc.net/problem/10799) ✅ | [1012](https://www.acmicpc.net/problem/1012) ✅ | [1697](https://www.acmicpc.net/problem/1697) ❌ | [1926](https://www.acmicpc.net/problem/1926) ❌ | [5014](https://www.acmicpc.net/problem/5014) ❌ |
 | [3986](https://www.acmicpc.net/problem/3986) ✅ | [2504](https://www.acmicpc.net/problem/2504) ✅ | [2178](https://www.acmicpc.net/problem/2178) ✅ | [7562](https://www.acmicpc.net/problem/7562) ❌ | [2583](https://www.acmicpc.net/problem/2583) ❌ | [2667](https://www.acmicpc.net/problem/2667) ❌ | [2468](https://www.acmicpc.net/problem/2468) ❌ |
 
-### 5주차 (9/23 ~ 9/29)
+### BFS
+> **5주차** (9/23 ~ 9/29)
 
 | 9월 23일 (월) | 9월 24일 (화) | 9월 25일 (수) | 9월 26일 (목) | 9월 27일 (금) | 9월 28일 (토) | 9월 29일 (일) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | [7576](https://www.acmicpc.net/problem/7576) ✅ | [10026](https://www.acmicpc.net/problem/10026) ❌ | [5427](https://www.acmicpc.net/problem/5427) ❌ | [2206](https://www.acmicpc.net/problem/2206) ❌ | [2573](https://www.acmicpc.net/problem/2573) ❌ | [13549](https://www.acmicpc.net/problem/13549) ❌ | [16920](https://www.acmicpc.net/problem/16920) ❌ |
 | [4179](https://www.acmicpc.net/problem/4179) ✅ | [7569](https://www.acmicpc.net/problem/7569) ❌ | [6593](https://www.acmicpc.net/problem/6593) ❌ | [9466](https://www.acmicpc.net/problem/9466) ❌ | [2146](https://www.acmicpc.net/problem/2146) ❌ | [1600](https://www.acmicpc.net/problem/1600) ❌ | [11967](https://www.acmicpc.net/problem/11967) ❌ |
+
+### 재귀
+
+> **6주차** (9/30 ~ 10/06)
+
+| 9월 30일 (월) | 10월 1일 (화) | 10월 2일 (수) | 10월 3일 (목) | 10월 4일 (금) | 10월 5일 (토) | 10월 6일 (일) |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| [1629](https://www.acmicpc.net/problem/1629) ✅ | [1780](https://www.acmicpc.net/problem/1780) ❌ | [2630](https://www.acmicpc.net/problem/2630) ❌ | [1074](https://www.acmicpc.net/problem/1074) ❌ | [2447](https://www.acmicpc.net/problem/2447) ❌ | [2448](https://www.acmicpc.net/problem/2448) ❌ | [14956](https://www.acmicpc.net/problem/14956) ❌ |
+| [17478](https://www.acmicpc.net/problem/17478) ❌ | [1992](https://www.acmicpc.net/problem/1992) ❌ | [11729](https://www.acmicpc.net/problem/11729) ❌ | | | | |
+
 
 ### 사용 방법:
 - ✅: 풀었음
