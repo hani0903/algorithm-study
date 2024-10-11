@@ -48,7 +48,7 @@
 
 | 9월 30일 (월) | 10월 1일 (화) | 10월 2일 (수) | 10월 3일 (목) | 10월 4일 (금) | 10월 5일 (토) | 10월 6일 (일) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| [1629](https://www.acmicpc.net/problem/1629) ✅👀 | [1780](https://www.acmicpc.net/problem/1780) ❌ | [2630](https://www.acmicpc.net/problem/2630) ❌ | [1074](https://www.acmicpc.net/problem/1074) ✅ | [2447](https://www.acmicpc.net/problem/2447) ❌ | [2448](https://www.acmicpc.net/problem/2448) ❌ | [14956](https://www.acmicpc.net/problem/14956) ❌ |
+| [1629](https://www.acmicpc.net/problem/1629) ✅👀 | [1780](https://www.acmicpc.net/problem/1780) ✅ | [2630](https://www.acmicpc.net/problem/2630) ❌ | [1074](https://www.acmicpc.net/problem/1074) ❌ | [2447](https://www.acmicpc.net/problem/2447) ❌ | [2448](https://www.acmicpc.net/problem/2448) ❌ | [14956](https://www.acmicpc.net/problem/14956) ❌ |
 | [17478](https://www.acmicpc.net/problem/17478) ✅👀 | [1992](https://www.acmicpc.net/problem/1992) ❌ | [11729](https://www.acmicpc.net/problem/11729) ❌ | | | | |
 
 
