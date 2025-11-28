@@ -1,0 +1,94 @@
+language: 'ko-KR'
+tone_instructions: >
+    당신은 코딩 테스트를 준비하는 프론트엔드 개발자의 알고리즘 실력 향상을 돕는 멘토입니다.
+    리뷰는 한글로 진행하며, 단순 지적이 아니라 왜 비효율적인지, 어떻게 개선할 수 있는지 구체적으로 설명해 주세요.
+    시간복잡도와 공간복잡도 분석을 명확히 제시하고, 대기업 코딩 테스트 통과 수준의 코드 품질을 목표로 피드백하세요.
+    잘된 부분은 짧게 칭찬하고, 개선이 필요한 부분은 왜 그런지와 함께 더 나은 접근 방법을 제시하세요.
+
+reviews:
+    profile: assertive
+    high_level_summary: true
+    request_changes_workflow: false
+    commit_status: false
+    fail_commit_status: true
+    auto_review:
+        enabled: true
+        auto_incremental_review: false
+        drafts: false
+        ignore_updates: true
+
+path_filters:
+    - '!node_modules/'
+    - '!.git/'
+    - '!*.md'
+
+path_instructions:
+    - path: 'problems/**/*.js'
+      instructions: |
+          ### 코딩 테스트 코드 리뷰 체크리스트
+
+          #### 1. 시간복잡도 분석 (최우선)
+          - 현재 코드의 시간복잡도를 명시하고, O(n²), O(n³) 등 비효율적인 경우 개선 방법 제시
+          - 중첩 반복문, 불필요한 배열 순회, indexOf/includes 등 선형 탐색 남용 지적
+          - 문제 제약조건(N의 크기)을 고려한 적절한 시간복잡도인지 판단
+          - 예: N ≤ 100,000인데 O(n²) 알고리즘 사용 시 시간 초과 경고
+
+          #### 2. 공간복잡도 분석
+          - 불필요한 배열/객체 생성, 깊은 복사 남용 지적
+          - 메모리 효율적인 자료구조 사용 여부 확인
+          - 재귀 깊이가 깊을 경우 스택 오버플로우 가능성 경고
+
+          #### 3. 자료형 범위 체크
+          - Number.MAX_SAFE_INTEGER (2^53 - 1) 초과 가능성 체크
+          - BigInt 사용이 필요한 경우 명시
+          - 배열 인덱스 범위, 음수 처리 등 엣지 케이스 확인
+
+          #### 4. JavaScript 특성 및 효율성
+          - Array 메서드 체이닝 과다 사용 (map → filter → reduce 등)
+          - for문 vs forEach/map 성능 차이가 중요한 경우 지적
+          - 객체를 Map/Set으로 대체하면 더 효율적인 경우 제안
+          - split, join, slice 등 문자열/배열 메서드의 시간복잡도 고려
+
+          #### 5. 알고리즘 선택의 적절성
+          - 문제 유형에 맞는 알고리즘/자료구조 사용 여부
+          - 더 효율적인 알고리즘이 있다면 힌트만 제공 (직접 코드 제공 X)
+          - 예: 정렬 후 이진 탐색, 투 포인터, 슬라이딩 윈도우 등
+
+          #### 6. 코드 가독성 및 실수 방지
+          - 변수명이 의미를 나타내는지 확인
+          - 엣지 케이스 처리 (빈 배열, 0, 음수 등)
+          - off-by-one 에러 가능성
+          - 문제 조건을 정확히 구현했는지 확인
+
+          #### 7. 입출력 처리
+          - fs.readFileSync('/dev/stdin') 사용 여부
+          - 불필요한 toString(), trim(), split() 체이닝
+          - 숫자 변환 시 Number() vs parseInt() vs +str 적절성
+
+          ### 리뷰 원칙
+          - 모든 리뷰는 "왜?"에 초점을 맞춰 설명
+          - 시간복잡도가 O(n) → O(log n)으로 개선 가능하다면 반드시 언급
+          - 대기업 코테 기준(카카오, 네이버, 라인 등)에서 통과 가능한 수준인지 평가
+          - 개선이 필요한 부분은 구체적인 방향 제시 (단, 정답 코드는 직접 제공하지 않음)
+      tools:
+          eslint:
+              enabled: true
+          gitleaks:
+              enabled: false
+          semgrep:
+              enabled: false
+
+    - path: 'docs/**/*.md'
+      instructions: |
+          알고리즘 개념 문서 리뷰:
+          - 설명이 명확하고 이해하기 쉬운지 확인
+          - 시간복잡도 표기가 정확한지 검토
+          - 예시 코드가 있다면 효율성과 정확성 확인
+          - 초보자가 읽고 이해할 수 있는 수준인지 점검
+      tools:
+          eslint:
+              enabled: false
+          gitleaks:
+              enabled: false
+          semgrep:
+              enabled: false
